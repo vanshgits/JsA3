@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Form</title>
+    <!-- Linking CSS file -->
+    <link rel="stylesheet" href="./Css/style.css">
+    <!-- Adding js file -->
+    <script src="./Js/custom.js" defer></script>
+</head>
+<body>
+    <!-- P tag for adding Student id and name -->
+    <p id="StudentId"></p>
+
+    <div id="formdiv">
+        <!-- Form -->
+        <form id="pizzaform">
+
+            <!-- Size Selection -->
+            <label for="PizzaSize">Choose Size</label>
+            <select name="sizeselection" id="PizzaSize">
+                <option value="small">Small-10"</option>
+                <option value="Medium">Medium-12"</option>
+                <option value="Large">Large-14"</option>
+            </select>
+
+            <!-- Crust Choice -->
+            <label for="CrustChoice">Select Crust</label>
+            <select name="crustselection" id="CrustChoice">
+                <option value="Hand Toasted Thin">Hand Toasted Thin</option>
+                <option value="Original Hand Tossed">Original Hand Tossed</option>
+                <option value="Crunchy Thin Crust">Crunchy Thin Crust</option>
+            </select>
+            
+            <!-- Cheese Choice -->
+            <div id="cheesechoicebox">
+                <p>Cheese Choice: </p>
+                <label for="NormalCheese">Normal Cheese</label>
+                <input type="radio" name="Cheesechoice" id="NormalCheese" value="NormalCheese" checked>
+                <br>
+                <label for="DoubleCheese">Double Cheese</label>
+                <input type="radio" name="Cheesechoice" id="DoubleCheese" value="DoubleCheese">
+            </div>
+
+            <!-- Sauce Choice -->
+            <div id="Sauces">
+                <p>Sauces:</p>
+                <label for="NormalPizzaSauce">Normal Pizza Sauce</label>
+                <input type="checkbox" name="SauceSalection" id="NormalPizzaSauce" value="NormalPizzaSauce" checked>
+                <label for="GarlicParmesan">Garlic Parmesan</label>
+                <input type="checkbox" name="SauceSalection" id="GarlicParmesan" value="GarlicParmesan">
+                <label for="BBQSauce">BBQ Sauce</label>
+                <input type="checkbox" name="SauceSalection" id="BBQSauce" value="BBQSauce">
+                <label for="RanchDressing">Ranch Dressing</label>
+                <input type="checkbox" name="SauceSalection" id="RanchDressing" value="RanchDressing">
+            </div>
+
+
+            <!-- Topping Choice -->
+            <div id="ToppingSelection">
+                <p>Choose Toppings:</p>
+                
+                <label for="Pepperoni">Pepperoni</label>
+                <input type="checkbox" name="ToppingSelection" id="Pepperoni" value="Pepperoni">
+                <br>
+                <label for="Sausage">Sausage</label>
+                <input type="checkbox" name="ToppingSelection" id="Sausage" value="Sausage">
+                <br>
+                <label for="BeefCrumble">BeefCrumble</label>
+                <input type="checkbox" name="ToppingSelection" id="BeefCrumble" value="BeefCrumble">
+                <br>
+                <label for="Cheddar">Cheddar</label>
+                <input type="checkbox" name="ToppingSelection" id="Cheddar" value="Cheddar">
+                <br>
+                <label for="Feta">Feta</label>
+                <input type="checkbox" name="ToppingSelection" id="Feta" value="Feta">
+                <br>
+                <label for="BlackOlives">Black Olives</label>
+                <input type="checkbox" name="ToppingSelection" id="BlackOlives" value="BlackOlives">
+                <br>
+                <label for="GreenOlives">Green Olives</label>
+                <input type="checkbox" name="ToppingSelection" id="GreenOlives" value="GreenOlives">
+                <br>
+                <label for="GreenPeppers">Green Peppers</label>
+                <input type="checkbox" name="ToppingSelection" id="GreenPeppers" value="GreenPeppers">
+                <br>
+                <label for="Onions">Onions</label>
+                <input type="checkbox" name="ToppingSelection" id="Onions" value="Onions">
+                <br>
+                <label for="Tomatoes">Tomatoes</label>
+                <input type="checkbox" name="ToppingSelection" id="Tomatoes" value="Tomatoes">
+                <br>
+                <label for="RoastedRedPeppers">Roasted Red Peppers</label>
+                <input type="checkbox" name="ToppingSelection" id="RoastedRedPeppers" value="RoastedRedPeppers">
+            </div>
+            <!-- Cut Choice -->
+            <div id="cheesechoicebox">
+                <p>Cut Choice: </p>
+                <label for="PieCut">Pie Cut</label>
+                <input type="radio" name="CutChoice" id="PieCut" value="PieCut" checked>
+                <br>
+                <label for="NoCut">No Cut</label>
+                <input type="radio" name="CutChoice" id="NoCut" value="NoCut">
+            </div>
+
+            
+
+            <input type="submit" value="order">
+
+        </form>
+    </div>
+<br>
+    <!-- Pizza Description -->
+    <div id="pizzaDescription"></div>
+</body>
+</html>

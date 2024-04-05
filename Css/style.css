@@ -1,0 +1,9 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+hr{
+    border-color: black;
+    border-style: dashed;
+}
